@@ -31,10 +31,7 @@ namespace B1
 
         public int Balance(int a, int d, int w)
         {
-            Deposit();
-            Withdraw();
             return amount;
         }
     }
-
 }
