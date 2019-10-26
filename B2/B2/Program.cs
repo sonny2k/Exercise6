@@ -10,15 +10,17 @@ namespace B2
     {
         static void Main(string[] args)
         {
-            Stack s = new Stack();
-            s.Push("1");
-            s.Push("2");
-            s.Push("3");
-            Console.WriteLine(s.Pop());
-            Console.WriteLine(s.Pop());
-            Console.WriteLine(s.Peek());
-            Console.WriteLine(s.Count());
-            s.Clear();
+            string[] array = { "Pham", "Ngoc", "Duy" };
+            Stack myStack = new Stack();
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                myStack.Push(array[i]);
+            }
+
+            for (int i = 0; i < array.Length; i++)
+                Console.WriteLine(myStack.Pop() + " ");
+                
         }
     }
 }

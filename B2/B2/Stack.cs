@@ -18,25 +18,23 @@ namespace B2
 
         public void Push(string a)
         {
-            a = Buffer[Top + 1];
+            Buffer[Top + 1] = a;
             Top++;
         }
 
         public string Pop()
         {
-            string a = Buffer[Top];
-            Top = Top - 1;
-            return a;
+            return Buffer[Top--];
         }
 
         public string Peek()
         {
-            return Buffer[Top];
+            return Buffer[Top]; 
         }
 
         public int Count()
         {
-            return Top +1;
+            return Top + 1;
         }
 
         public void Clear()
