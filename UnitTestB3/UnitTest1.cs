@@ -37,6 +37,7 @@ namespace UnitTestB3
             q.Enqueue(6);
             q.Enqueue(7);
             Assert.AreEqual(5, q.PeekQueue());
+            Assert.AreEqual(6, q.PeekQueue());
             Assert.AreEqual(3, q.Count());
         }
 
